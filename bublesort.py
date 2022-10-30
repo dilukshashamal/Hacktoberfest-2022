@@ -1,19 +1,19 @@
-def bublesort(elements):
+def bublesort(element):
     swapped = False
 
     #loop
-    for n in range(len(elements)-1,0,-1):
+    for n in range(len(element)-1,0,-1):
         for i in range(n):
-            if elements[i] > elements[i+1]:
+            if element[i] > element[i+1]:
                 swapped = True
-                elements[i], elements[i + 1] = elements[i + 1], elements[i]
+                element[i], element[i + 1] = element[i + 1], element[i]
         if not swapped:
             return
 
-elements = [39, 12, 18, 85, 72, 10, 2, 18]
+element = [39, 12, 18, 85, 72, 10, 2, 18]
 print("Unsorted list is,")
-print(elements)
-bublesort(elements)
+print(element)
+bublesort(element)
 print("Sorted Array is, ")
-print(elements)
+print(element)
 
